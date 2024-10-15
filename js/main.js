@@ -112,15 +112,13 @@
     });
 
 
-    // Testimonials carousel
-    $(".testimonial-carousel").owlCarousel({
+    // scroll carousel
+    new ScrollCarousel(".my-carousel", {
         autoplay: true,
-        smartSpeed: 1000,
-        items: 1,
-        dots: true,
-        loop: true,
-    });
-
+        speed: 6,
+        smartSpeed: true,
+        margin: 45,
+      });
     
 })(jQuery);
 
